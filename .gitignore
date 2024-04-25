@@ -1,3 +1,11 @@
+# HYPE model files
+model/*
+
+# Additional files
+scripts/.ipynb_checkpoints
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
