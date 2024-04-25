@@ -1,10 +1,13 @@
 # HYPE model files
-model/*
+hype_model/*
+0058213.txt
+
+# Outputs
+esp_forcings/
+58213_esp_results/
 
 # Additional files
 scripts/.ipynb_checkpoints
-
-
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
