@@ -1,6 +1,7 @@
 # HYPE model files
 hype_model/*
 0058213.txt
+!model/.gitkeep
 
 # Outputs
 esp_forcings/
