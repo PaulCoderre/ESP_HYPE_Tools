@@ -1,5 +1,5 @@
 # ESP_HYPE_Tools
-This repository contains scripts to perform Ensemble Streamflow Prediction for the HYPE model and visualize and analyze the results.  
+This repository contains scripts to perform Ensemble Streamflow Prediction (ESP) for the HYPE model and visualize and analyze the results.  
 
 ## Contents
 ### Model  
@@ -14,7 +14,7 @@ This directory contains scripts for establishing a correlation between snow wate
 ### sample_outputs
 This directory contains sample plots of ESP analysis and tables of statistics that can be generated.
 
-## Instructions
+## ESP Instructions
 1. Copy HYPE model into model directory.
 2. Run 01_generate_ensemble.ipynb to create the ensemble of forcings. The ensemble is created from every year in the model forcing files (not including the year of analysis). Required inputs are:
    - Year of analysis
@@ -47,6 +47,17 @@ This directory contains sample plots of ESP analysis and tables of statistics th
    - Start and end date for the ESP analysis. These are the dates between which the quartiles will be calculated for the ensemble. Changing this allows for performance comparison between different lead times.
    - Output directory. Default is ./
    - (**Optionally**) Path to a full HYPE simulation including the analysis year. If specified, the script will add computed runoff for known historical forcings to the plot.
+
+## SWE Analysis Instructions
+1. Download desired SWE data. This workflow was designed for a 4 km gridded SWE and snow depth dataset (Broxton et al., 2019) that was created by assimilating PRISM daily temperature and precipitation data, SWE and snow depth data from the SNOTEL station network and snow depth data from the COOP network.
+2. Run process_snotel.ipynb script to reproject, trim extents and add a calendar type. Modify as required.
+3. Run the EASYMORE workflow (Gharari et al., 2023) to remap the SWE data to a given shapefile. A sample EASYMORE script is provided.
+4. Run swe&runoff.ipynb script to rank each year's SWE and summer runoff and plot the results. The r^2 is calculated for the plot. Required inputs are:
+   - Path to the EASYMORE outputs.
+   - Start and end date for the Analysis.
+   - Path to HYPE's observed flow input file (Qobs.txt).
+   - River segment to be analyzed.
+   - Location of output directory. 
 
    
 
