@@ -1,7 +1,6 @@
 # ESP_HYPE_Tools
 This repository contains scripts to perform Ensemble Streamflow Prediction for the HYPE model and visualize and analyze the results.  
 
-_______
 ## Contents
 ### Model  
 This is an empty directory where all requred files to run the HYPE model can be copied. 
@@ -15,7 +14,6 @@ This directory contains scripts for establishing a correlation between snow wate
 ### sample_outputs
 This directory contains sample plots of ESP analysis and tables of statistics that can be generated.
 
-_______
 ## Instructions
 1. Copy HYPE model into model directory.
 2. Run 01_generate_ensemble.ipynb to create the ensemble of forcings. The ensemble is created from every year in the model forcing files (not including the year of analysis). Required inputs are:
@@ -35,10 +33,10 @@ _______
    - Directory containing the model. Default is ../model.
    - Output directory. Default is ./
 4. Run 03_visualize_outputs.ipynb to create a plot for a given year containing each ensemble member, uncertainty bands and the mean of the ensemble for a given variable. Required inputs are:
-  - Output file to plot
-  - variable to analyze. Can be cout or snow representing simulated streamflow and SWE
-  - Output directory. Default is ./
-  - (**Optionally**) Path to a full HYPE simulation including the analysis year. If specified, the script will add computed runoff for known historical forcings to the plot. Useful for validating the ESP performance against simulated runoff.
+   - Output file to plot
+   - variable to analyze. Can be cout or snow representing simulated streamflow and SWE
+   - Output directory. Default is ./
+   - (**Optionally**) Path to a full HYPE simulation including the analysis year. If specified, the script will add computed runoff for known historical forcings to the plot. Useful for validating the ESP performance against simulated runoff.
 
    
 
