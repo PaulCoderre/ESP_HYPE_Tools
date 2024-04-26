@@ -59,5 +59,13 @@ This directory contains sample plots of ESP analysis and tables of statistics th
    - River segment to be analyzed.
    - Location of output directory. 
 
+## References
+Broxton, P., X. Zeng, and N. Dawson. (2019). Daily 4 km Gridded SWE and Snow Depth from Assimilated In-Situ and Modeled Data over the Conterminous US, Version 1 [Data Set]. Boulder, Colorado USA. NASA National Snow and Ice Data Center Distributed Active Archive Center. https://doi.org/10.5067/0GGPB220EX6A. Date Accessed 04-26-2024.
+
+Gharari, S., Keshavarz, K., Knoben, W. J. M., Tang, G., & Clark, M. P. (2023). EASYMORE: A Python package to streamline the remapping of variables for Earth System models. SoftwareX, 24, 101547. https://doi.org/10.1016/j.softx.2023.101547
+
+Huang, C., Newman, A. J., Clark, M. P., Wood, A. W., & Zheng, X. (2017). 1 Evaluation of snow data assimilation using the Ensemble Kalman 2 Filter for seasonal streamflow prediction in the Western United 3 States. Hydrology and Earth System Sciences, 21(1), 635–650. https://hess.copernicus.org/preprints/hess-2016-185/hess-2016-185-manuscript-version6.pdf
+
+
    
 
