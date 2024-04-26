@@ -36,17 +36,17 @@ This directory contains sample plots of ESP analysis and tables of statistics th
    - Output file to plot
    - variable to analyze. Can be cout or snow representing simulated streamflow and SWE
    - Output directory. Default is ./
-   - (**Optionally**) Path to a full HYPE simulation including the analysis year. If specified, the script will add computed runoff for known historical forcings to the plot. Useful for validating the ESP performance against simulated runoff.
+   - (**Optional**) Path to a full HYPE simulation including the analysis year. If specified, the script will add computed runoff for known historical forcings to the plot. Useful for validating the ESP performance against simulated runoff.
 5. Run 04_bar&whisker_plot.ipynb to generate a bar and whisker plot comparing the ensemble to observed streamflow for each year included in the analysis. Useful for comparing the ESP performance between different years. Required inputs are:
    - Path to the directory containing the ESP outputs.
    - Start and end date for the ESP analysis. These are the dates between which the quartiles will be calculated for the ensemble. Changing this allows for performance comparison between different lead times.
    - Output directory. Default is ./
-   - (**Optionally**) Path to a full HYPE simulation including the analysis year. If specified, the script will add computed runoff for known historical forcings to the plot.
+   - (**Optional**) Path to a full HYPE simulation including the analysis year. If specified, the script will add computed runoff for known historical forcings to the plot.
 6. Run 05_statistics.ipynb script to output tables containing the bias for each year included in the ESP analysis, correlation coefficient, RMSE and NSE (Huang et al. 2017). These statistics are being calculated with the mean of the ensemble. More statistics can be added as needed. Required inputs are:
    - Path to the directory containing the ESP outputs.
    - Start and end date for the ESP analysis. These are the dates between which the quartiles will be calculated for the ensemble. Changing this allows for performance comparison between different lead times.
    - Output directory. Default is ./
-   - (**Optionally**) Path to a full HYPE simulation including the analysis year. If specified, the script will add computed runoff for known historical forcings to the plot.
+   - (**Optional**) Path to a full HYPE simulation including the analysis year. If specified, the script will add computed runoff for known historical forcings to the plot.
 
 ## SWE Analysis Instructions
 1. Download desired SWE data. This workflow was designed for a 4 km gridded SWE and snow depth dataset (Broxton et al., 2019) that was created by assimilating PRISM daily temperature and precipitation data, SWE and snow depth data from the SNOTEL station network and snow depth data from the COOP network.
