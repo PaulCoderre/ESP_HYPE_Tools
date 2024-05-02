@@ -1,14 +1,17 @@
 # HYPE model files
 hype_model/*
 0058213.txt
+0058418.txt
 !model/.gitkeep
+swe_analysis/smm_tgf_modified/
+swe_analysis/easymore_snotel/
 
 # Outputs
-esp_forcings/
-58213_esp_results/
+project/
 
 # Additional files
 scripts/.ipynb_checkpoints
+scripts/06_swe&stats.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
