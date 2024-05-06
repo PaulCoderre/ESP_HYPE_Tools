@@ -67,6 +67,7 @@ Gharari, S., Keshavarz, K., Knoben, W. J. M., Tang, G., & Clark, M. P. (2023). E
 
 Huang, C., Newman, A. J., Clark, M. P., Wood, A. W., & Zheng, X. (2017). 1 Evaluation of snow data assimilation using the Ensemble Kalman 2 Filter for seasonal streamflow prediction in the Western United 3 States. Hydrology and Earth System Sciences, 21(1), 635–650. https://hess.copernicus.org/preprints/hess-2016-185/hess-2016-185-manuscript-version6.pdf
 
+Lindström, G., Pers, C., Rosberg, J., Strömqvist, J., & Arheimer, B. (2010). Development and testing of the HYPE (Hydrological Predictions for the Environment) water quality model for different spatial scales. Hydrology Research, 41(3–4), 295–319. https://doi.org/10.2166/nh.2010.007
 
    
 
