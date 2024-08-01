@@ -42,11 +42,12 @@ This directory contains sample plots of ESP analysis and tables of statistics th
    - Start and end date for the ESP analysis. These are the dates between which the quartiles will be calculated for the ensemble. Changing this allows for performance comparison between different lead times.
    - Output directory. Default is ./
    - (**Optional**) Path to a full HYPE simulation including the analysis year. If specified, the script will add computed runoff for known historical forcings to the plot.
-6. Run 05_statistics.ipynb script to output tables containing the bias for each year included in the ESP analysis, correlation coefficient, RMSE and NSE (Huang et al. 2017). These statistics are being calculated with the mean of the ensemble. More statistics can be added as needed. Required inputs are:
+6. Run 05_01_observed_statistics.ipynb or 05_02_simulated_statistics.ipynb to calculate statistics for the ESP ensemble and the observed flow or simulated flow respectively. Simulated flow can be used if producing a hindcast so that model biases do not impact the skill of the results. These scripts calculate the following statistcs: bias, correlation coefficient and RMSE along with normalized bias and normalized RMSE (Huang et al. 2017). These statistics are being calculated with the mean of the ensemble. More statistics can be added as needed. Required inputs are:
    - Path to the directory containing the ESP outputs.
    - Start and end date for the ESP analysis. These are the dates between which the quartiles will be calculated for the ensemble. Changing this allows for performance comparison between different lead times.
    - Output directory. Default is ./
-   - (**Optional**) Path to a full HYPE simulation including the analysis year. If specified, the script will add computed runoff for known historical forcings to the plot.
+   - (**For 05_02_simulated_statistics.ipynb**) Path to a full HYPE simulation including the analysis year. If specified, the script will add computed runoff for known historical forcings to the plot.
+   - (**Optional**) Path to a full ranking of SWE by year. Used to compare performance of years with SWE value. 
 
 ## SWE Analysis Instructions
 1. Download desired SWE data. This workflow was designed for a 4 km gridded SWE and snow depth dataset (Broxton et al., 2019) that was created by assimilating PRISM daily temperature and precipitation data, SWE and snow depth data from the SNOTEL station network and snow depth data from the COOP network.
@@ -66,6 +67,7 @@ Gharari, S., Keshavarz, K., Knoben, W. J. M., Tang, G., & Clark, M. P. (2023). E
 
 Huang, C., Newman, A. J., Clark, M. P., Wood, A. W., & Zheng, X. (2017). 1 Evaluation of snow data assimilation using the Ensemble Kalman 2 Filter for seasonal streamflow prediction in the Western United 3 States. Hydrology and Earth System Sciences, 21(1), 635–650. https://hess.copernicus.org/preprints/hess-2016-185/hess-2016-185-manuscript-version6.pdf
 
+Lindström, G., Pers, C., Rosberg, J., Strömqvist, J., & Arheimer, B. (2010). Development and testing of the HYPE (Hydrological Predictions for the Environment) water quality model for different spatial scales. Hydrology Research, 41(3–4), 295–319. https://doi.org/10.2166/nh.2010.007
 
    
 
