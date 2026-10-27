@@ -15,7 +15,7 @@ module use /work/comphyd_lab/local/modules/spack/2024v5/modules/linux-rocky8-x86
 module restore scimods
 source ~/virtual-envs/scienv/bin/activate
 
-python -u 04_crpss_plot.py $run_number
+python -u 04_crpss_window_plot.py 
 
 
 
